@@ -1,0 +1,60 @@
+<ModMetaData>
+	<name>Alpha Vehicles - Early Cars</name>
+	<author>Sarg</author>
+	<supportedVersions>
+		
+		<li>1.5</li>
+	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaVehiclesLogo</modIconPath>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>SmashPhil.VehicleFramework</packageId>
+			<displayName>Vehicle Framework</displayName>
+			<downloadUrl>https://github.com/SmashPhil/Vehicles/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3014915404</steamWorkshopUrl>
+		</li>
+	
+	</modDependencies>
+	<packageId>sarg.alphavehiclesearlycars</packageId>
+	<description>Adds 8 early cars from 1885 to 1923.
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+No issues tracked
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+
+More vehicles? Maybe!
+
+&lt;size=24&gt;Credit&lt;/size&gt;
+
+https://sketchfab.com/3d-models/ford-mode-t-coupe-1913-3a3155036db6431fb0c48ba72bb93c8c
+https://sketchfab.com/3d-models/1901-oldsmobile-model-r-curved-dash-mp-78839e639caa43e0a28278ab6aa6ddf5
+https://sketchfab.com/3d-models/erster-dreirad-motorwagen-von-carl-benz-47df0cb894a34d33a09361f3cb182070
+https://sketchfab.com/3d-models/oldsmobile-ee5e152c2e8f4cfba89e6beac6573289 Light Tonneau
+https://sketchfab.com/3d-models/1923-rolls-royce-silver-ghost-mp-77e7ebdf4d8b4faa86437083113d64db
+https://sketchfab.com/3d-models/ford-model-a-hw-xyz-school-5-6b12d952f7b1411794738d256f65464e
+https://sketchfab.com/3d-models/1902-renault-type-k-blueprint-3ec7b05f72ee46d19ce0739bb529e080
+
+&lt;size=24&gt;Compatibility&lt;/size&gt;
+
+Should be compatible with any vehicle mods out there
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+
+Full changelog on GitHub
+
+
+		</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>brrainz.harmony</li>
+		<li>SmashPhil.VehicleFramework</li>
+		<li>OskarPotocki.VanillaVehiclesExpanded</li>
+	</loadAfter>
+</ModMetaData>
