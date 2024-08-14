@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>AV_OldsmobileModelRCurvedDash_Blueprint</defName>
+		<label>Oldsmobile Curved Dash</label>
+		<description>Produced from 1901 to 1907, the Oldsmobile Model R, "Curved Dash" was the first mass-produced car in the world. It featured a distinctive curved front dash (hence the name) and was powered by a single-cylinder engine, producing about 5 horsepower. Affordable and reliable, it became one of the most popular early automobiles, helping to establish Oldsmobile as a key player in the emerging car industry.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Land/Tier1/AV_OldsmobileModelRCurvedDash/AV_OldsmobileModelRCurvedDash</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3.5</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,3)</size>
+		
+		<researchPrerequisites>
+			<li>AV_EarlyCars</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<AV_EarlyMotor>1</AV_EarlyMotor>		
+			<AV_EarlyWheel>4</AV_EarlyWheel>
+			<Steel>80</Steel>
+			<WoodLog>100</WoodLog>
+			
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>AV_OldsmobileModelRCurvedDash</thingToSpawn>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

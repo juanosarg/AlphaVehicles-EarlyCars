@@ -2,14 +2,14 @@
 
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
-		<defName>AV_BenzPatentMotorwagen_Blueprint</defName>
-		<label>Benz Patent-Motorwagen</label>
-		<description>The Benz Patent-Motorwagen, built in 1885 by Karl Benz, is widely regarded as the first practical automobile. It was a three-wheeled vehicle powered by a single-cylinder, four-stroke engine. Benz patented the design in 1886, marking the birth of the modern car.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<defName>AV_FordModelT_Blueprint</defName>
+		<label>Ford Model T</label>
+		<description>Produced from 1908 to 1927, the Ford Model T is one of the most iconic cars in automotive history. It was the first automobile mass-produced on moving assembly lines, making it affordable and accessible to a wide audience. Powered by a 2.9-liter, four-cylinder engine, the Model T revolutionized transportation and became a symbol of early 20th-century innovation.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<designationCategory>VF_Vehicles</designationCategory>
 		<graphicData>
-			<texPath>Things/Vehicles/Land/Tier1/AV_BenzPatentMotorwagen/AV_BenzPatentMotorwagen</texPath>
+			<texPath>Things/Vehicles/Land/Tier1/AV_FordModelT/AV_FordModelT</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>3.25</drawSize>
+			<drawSize>3.85</drawSize>
 		</graphicData>
 		
 		<statBases>
@@ -34,7 +34,7 @@
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		
-		<thingToSpawn>AV_BenzPatentMotorwagen</thingToSpawn>
+		<thingToSpawn>AV_FordModelT</thingToSpawn>
 		
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</Vehicles.VehicleBuildDef>

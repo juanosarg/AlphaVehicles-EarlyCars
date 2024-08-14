@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>AV_FordModelTVan_Blueprint</defName>
+		<label>Ford Model T Van</label>
+		<description>Produced from 1908 to 1927, the Ford Model T is one of the most iconic cars in automotive history. It was the first automobile mass-produced on moving assembly lines, making it affordable and accessible to a wide audience. Powered by a 2.9-liter, four-cylinder engine, the Model T revolutionized transportation and became a symbol of early 20th-century innovation.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Land/Tier1/AV_FordModelTVan/AV_FordModelTVan</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3.85</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,3)</size>
+		
+		<researchPrerequisites>
+			<li>AV_EarlyCars</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<AV_EarlyMotor>1</AV_EarlyMotor>		
+			<AV_EarlyWheel>4</AV_EarlyWheel>
+			<Steel>80</Steel>
+			<WoodLog>100</WoodLog>
+			
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>AV_FordModelTVan</thingToSpawn>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>
