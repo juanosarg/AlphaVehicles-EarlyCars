@@ -2,23 +2,26 @@
 
 <Defs>	
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
-		<defName>AV_OldsmobileLightTonneau</defName>
-		<label>Oldsmobile Light Tonneau</label>
-		<description>The Oldsmobile Light Tonneau, introduced in 1905, was an early automobile featuring a larger, more powerful design compared to the earlier Curved Dash model. It had a four-seat, open-top body style known as a "tonneau," with a rear seating area that could be accessed via a side door. Powered by a two-cylinder engine, it offered more horsepower and improved performance.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x2\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+	<defName>AV_FordModelAFireTruck</defName>
+		<label>Ford Model A Firetruck</label>
+		<description>The Ford Model A, produced from 1927 to 1931, was the successor to the Model T and marked a significant advancement in automotive design and technology. It featured a more modern look with improved styling, a more powerful 3.3-liter four-cylinder engine, and enhanced driving comfort.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<graphicData>
-			<texPath>Things/Vehicles/Land/Tier1/AV_OldsmobileLightTonneau/AV_OldsmobileLightTonneau</texPath>
+			<texPath>Things/Vehicles/Land/Tier1/AV_FordModelAFireTruck/AV_FordModelAFireTruck</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>4.2</drawSize>
-			<color>(153, 50, 34)</color>
+			<drawSize>5.2</drawSize>
+			<color>(91, 8, 8)</color>
+			<colorTwo>(63, 9, 16)</colorTwo>
+			<colorThree>(37, 11, 11)</colorThree>
+			
 			
 		</graphicData>
 		
 		<fillPercent>0.8</fillPercent>
 		
-		<buildDef>AV_OldsmobileLightTonneau_Blueprint</buildDef>
+		<buildDef>AV_FordModelAFireTruck_Blueprint</buildDef>
 		
-		<size>(3,4)</size>
+		<size>(2,4)</size>
 		
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<vehicleCategory>Transport</vehicleCategory>
@@ -66,31 +69,20 @@
 					<label>Driver</label>
 					<slots>1</slots>
 					<slotsToOperate>1</slotsToOperate>
-					<exposed>true</exposed>
+					<exposed>false</exposed>
 					<hitbox>
 						<side>Body</side>
 					</hitbox>
 					<handlingTypes>
 						<li>Movement</li>
 					</handlingTypes>
-					<pawnRenderer>
-						<layer>1</layer>
-						<layerNorth>1</layerNorth>
-						<layerSouth>1</layerSouth>
-						<layerEast>0</layerEast>
-						<layerWest>1</layerWest>
-
-						<drawOffsetNorth>(-0.25,0,0.75)</drawOffsetNorth>
-						<drawOffsetSouth>(0.25,0,1)</drawOffsetSouth>
-						<drawOffsetEast>(-0.3,0,1)</drawOffsetEast>
-						<drawOffsetWest>(0.3,0,0.6)</drawOffsetWest>
-					</pawnRenderer>
+					
 				</li>
 				<li>
 					<key>Passenger</key>
 					<label>Passenger</label>
 					<slots>1</slots>
-					<exposed>true</exposed>
+					<exposed>false</exposed>
 					
 					<hitbox>
 						<side>Body</side>
@@ -98,46 +90,7 @@
 							<li>Back</li>
 						</noOverlapWith>
 					</hitbox>
-					<pawnRenderer>
-						<layer>1</layer>
-						<layerNorth>1</layerNorth>
-						<layerSouth>1</layerSouth>
-						<layerEast>1</layerEast>
-						<layerWest>0</layerWest>
-
-						<drawOffsetNorth>(0.25,0,0.75)</drawOffsetNorth>
-						<drawOffsetSouth>(-0.25,0,1)</drawOffsetSouth>
-						<drawOffsetEast>(-0.3,0,0.6)</drawOffsetEast>
-						<drawOffsetWest>(0.3,0,1)</drawOffsetWest>
-					</pawnRenderer>
-				</li>
-				<li>
-					<key>Passenger</key>
-					<label>Rear passenger</label>
-					<slots>1</slots>
-					<exposed>true</exposed>
 					
-					<hitbox>
-						<side>Body</side>
-						<noOverlapWith>
-							<li>Back</li>
-						</noOverlapWith>
-					</hitbox>
-					<pawnRenderer>
-						<layer>1</layer>
-						<layerNorth>1</layerNorth>
-						<layerSouth>1</layerSouth>
-						<layerEast>1</layerEast>
-						<layerWest>0</layerWest>
-						<north>East</north>
-						<east>South</east>
-						<south>West</south>
-						<west>North</west>
-						<drawOffsetNorth>(0,0,-0.25)</drawOffsetNorth>
-						<drawOffsetSouth>(0.35,0,2)</drawOffsetSouth>
-						<drawOffsetEast>(-1.35,0,1.1)</drawOffsetEast>
-						<drawOffsetWest>(1.35,0,1)</drawOffsetWest>
-					</pawnRenderer>
 				</li>
 			</roles>
 		</properties>

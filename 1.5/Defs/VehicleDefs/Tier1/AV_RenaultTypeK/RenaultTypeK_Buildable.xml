@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>AV_RenaultTypeK_Blueprint</defName>
+		<label>Renault Type K</label>
+		<description>The Renault Type K, produced in 1902, was a significant early automobile that gained fame for its victory in the 1902 Paris-Vienna race. Designed by the Renault brothers, it featured a four-cylinder engine, which was advanced for its time, delivering more power and speed than many contemporary vehicles.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Land/Tier1/AV_RenaultTypeK/AV_RenaultTypeK</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4.2</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,4)</size>
+		
+		<researchPrerequisites>
+			<li>AV_EarlyCars</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<AV_EarlyMotor>1</AV_EarlyMotor>		
+			<AV_EarlyWheel>4</AV_EarlyWheel>
+			<Steel>80</Steel>
+			<WoodLog>100</WoodLog>
+			
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>AV_RenaultTypeK</thingToSpawn>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

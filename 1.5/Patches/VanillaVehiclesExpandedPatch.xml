@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Vehicles Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_FordModelAFireTruck"]/graphicData</xpath>
+					<value>
+						<pattern>VVE_Marble</pattern>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

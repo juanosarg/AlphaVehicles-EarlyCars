@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>AV_RollsRoyceSilverGhost_Blueprint</defName>
+		<label>Rolls Royce Silver Ghost</label>
+		<description>The Rolls-Royce Silver Ghost, introduced in 1906, is often regarded as one of the most iconic and luxurious cars of the early 20th century. Powered by a 7.0-liter six-cylinder engine, the Silver Ghost was renowned for its smooth performance, reliability, and quiet operation, earning it the nickname "the best car in the world."\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Land/Tier1/AV_RollsRoyceSilverGhost/AV_RollsRoyceSilverGhost</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>5.5</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,4)</size>
+		
+		<researchPrerequisites>
+			<li>AV_EarlyCars</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<AV_EarlyMotor>1</AV_EarlyMotor>		
+			<AV_EarlyWheel>4</AV_EarlyWheel>
+			<Steel>80</Steel>
+			<WoodLog>100</WoodLog>
+			
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>AV_RollsRoyceSilverGhost</thingToSpawn>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

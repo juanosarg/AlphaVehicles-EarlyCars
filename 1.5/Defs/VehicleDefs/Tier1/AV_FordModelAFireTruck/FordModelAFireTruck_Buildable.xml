@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>AV_FordModelAFireTruck_Blueprint</defName>
+		<label>Ford Model A Firetruck</label>
+		<description>The Ford Model A, produced from 1927 to 1931, was the successor to the Model T and marked a significant advancement in automotive design and technology. It featured a more modern look with improved styling, a more powerful 3.3-liter four-cylinder engine, and enhanced driving comfort.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Land/Tier1/AV_FordModelAFireTruck/AV_FordModelAFireTruck</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>5.2</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,4)</size>
+		
+		<researchPrerequisites>
+			<li>AV_EarlyCars</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<AV_EarlyMotor>1</AV_EarlyMotor>		
+			<AV_EarlyWheel>4</AV_EarlyWheel>
+			<Steel>80</Steel>
+			<WoodLog>100</WoodLog>
+			
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>AV_FordModelAFireTruck</thingToSpawn>
+		
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>
