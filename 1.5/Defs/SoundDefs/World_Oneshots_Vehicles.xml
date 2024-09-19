@@ -11,7 +11,7 @@
 						<clipPath>AV_EarlyCarStart</clipPath>
 					</li>
 				</grains>
-				<volumeRange>15~20</volumeRange>
+				<volumeRange>12~14</volumeRange>
 				<pitchRange>1~1</pitchRange>
 			</li>
 		</subSounds>

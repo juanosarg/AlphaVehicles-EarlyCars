@@ -18,7 +18,7 @@
 			<Flammability>0.05</Flammability>
 		</statBases>
 		
-		<size>(2,4)</size>
+		<size>(2,5)</size>
 		
 		<researchPrerequisites>
 			<li>AV_EarlyCars</li>

@@ -26,17 +26,17 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Flammability>1</Flammability>
-			<MarketValue>850</MarketValue>
+			<MarketValue>1300</MarketValue>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>45</Mass>
-			<MoveSpeed>6</MoveSpeed>
-			<CargoCapacity>50</CargoCapacity>
+			<Mass>130</Mass>
+			<MoveSpeed>8</MoveSpeed>
+			<CargoCapacity>200</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
 			<AccelerationRate>0.05</AccelerationRate>
 		</vehicleStats>
@@ -50,7 +50,7 @@
 	
 		
 		<race>
-			<baseBodySize>2</baseBodySize>
+			<baseBodySize>2.5</baseBodySize>
 		</race>
 		
 		<properties>

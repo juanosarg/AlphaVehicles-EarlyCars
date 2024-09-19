@@ -26,17 +26,17 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Flammability>1</Flammability>
-			<MarketValue>850</MarketValue>
+			<MarketValue>1100</MarketValue>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>45</Mass>
-			<MoveSpeed>6</MoveSpeed>
-			<CargoCapacity>50</CargoCapacity>
+			<Mass>90</Mass>
+			<MoveSpeed>8</MoveSpeed>
+			<CargoCapacity>150</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
 			<AccelerationRate>0.05</AccelerationRate>
 		</vehicleStats>
@@ -54,7 +54,7 @@
 		</race>
 		
 		<properties>
-			
+			<customRoadCosts AssignDefaults = "0.5"/>
 			<diagonalRotation>false</diagonalRotation>
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 1)</li>
@@ -294,7 +294,7 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 				
 				<hitbox>

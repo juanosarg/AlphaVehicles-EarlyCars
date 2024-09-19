@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaVehicles-EarlyCars\1.5\Assemblies\AlphaVehiclesEarlyCars.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaVehicles-EarlyCars\1.5\Source\AlphaVehiclesEarlyCars\AlphaVehiclesEarlyCars\obj\Debug\AlphaVehiclesEarlyCars.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaVehicles-EarlyCars\1.5\Source\AlphaVehiclesEarlyCars\AlphaVehiclesEarlyCars\obj\Debug\AlphaVehiclesEarlyCars.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaVehicles-EarlyCars\1.5\Source\AlphaVehiclesEarlyCars\AlphaVehiclesEarlyCars\obj\Debug\AlphaVehiclesEarlyCars.dll
