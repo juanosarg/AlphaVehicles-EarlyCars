@@ -27,8 +27,8 @@
 		<costList>
 			<AV_EarlyMotor>1</AV_EarlyMotor>		
 			<AV_EarlyWheel>4</AV_EarlyWheel>
-			<Steel>80</Steel>
-			<WoodLog>100</WoodLog>
+			<Steel>220</Steel>
+			<WoodLog>20</WoodLog>
 			
 		</costList>
 		

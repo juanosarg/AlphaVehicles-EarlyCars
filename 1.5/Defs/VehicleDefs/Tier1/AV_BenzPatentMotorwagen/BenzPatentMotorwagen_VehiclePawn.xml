@@ -40,7 +40,7 @@
 			<MoveSpeed>6</MoveSpeed>
 			<CargoCapacity>50</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
-			<AccelerationRate>0.05</AccelerationRate>
+			
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit="false">
 			<li>

@@ -38,7 +38,7 @@
 			<MoveSpeed>8</MoveSpeed>
 			<CargoCapacity>200</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
-			<AccelerationRate>0.05</AccelerationRate>
+			
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit="false">
 			<li>
@@ -344,7 +344,7 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -443,15 +443,10 @@
 			<li>
 				<key>Hood</key>
 				<label>Hood</label>
-				<health>45</health>
+				<health>60</health>
 				<depth>External</depth>
 			</li>
-			<li>
-				<key>Roof</key>
-				<label>Roof</label>
-				<health>45</health>
-				<depth>External</depth>
-			</li>
+			
 		</components>
 		
 		

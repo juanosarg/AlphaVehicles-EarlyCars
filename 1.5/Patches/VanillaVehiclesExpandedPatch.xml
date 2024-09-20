@@ -12,6 +12,66 @@
 						<pattern>VVE_Marble</pattern>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_BenzPatentMotorwagen"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.01</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_OldsmobileModelRCurvedDash"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.02</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_FordModelT"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.035</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_FordModelTVan"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.035</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_OldsmobileLightTonneau"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.035</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_RenaultTypeK"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.07</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_FordModelA"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.05</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_FordModelAAmbulance"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.05</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_FordModelAFireTruck"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.05</AccelerationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/Vehicles.VehicleDef[defName= "AV_RollsRoyceSilverGhost"]/vehicleStats</xpath>
+					<value>
+						<AccelerationRate>0.05</AccelerationRate>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

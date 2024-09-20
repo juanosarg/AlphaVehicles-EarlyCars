@@ -14,7 +14,7 @@
 		
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>2500</WorkToBuild>
+			<WorkToBuild>3500</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
 		
@@ -27,8 +27,10 @@
 		<costList>
 			<AV_EarlyMotor>1</AV_EarlyMotor>		
 			<AV_EarlyWheel>4</AV_EarlyWheel>
-			<Steel>80</Steel>
-			<WoodLog>100</WoodLog>
+			<Steel>220</Steel>
+			<WoodLog>20</WoodLog>
+			<Silver>275</Silver>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			
 		</costList>
 		

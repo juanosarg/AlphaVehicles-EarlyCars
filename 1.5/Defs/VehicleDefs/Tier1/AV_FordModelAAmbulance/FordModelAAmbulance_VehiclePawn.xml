@@ -4,7 +4,7 @@
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 	<defName>AV_FordModelAAmbulance</defName>
 		<label>Ford Model A Ambulance</label>
-		<description>The Ford Model A, produced from 1927 to 1931, was the successor to the Model T and marked a significant advancement in automotive design and technology. It featured a more modern look with improved styling, a more powerful 3.3-liter four-cylinder engine, and enhanced driving comfort.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<description>The Ford Model A, produced from 1927 to 1931, was the successor to the Model T and marked a significant advancement in automotive design and technology. It featured a more modern look with improved styling, a more powerful 3.3-liter four-cylinder engine, and enhanced driving comfort. This model has been converted into an ambulance, and will improve wound recovery rate of the person being transported.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Land/Tier1/AV_FordModelAAmbulance/AV_FordModelAAmbulance</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -29,19 +29,19 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Flammability>1</Flammability>
-			<MarketValue>850</MarketValue>
+			<MarketValue>1500</MarketValue>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>45</Mass>
-			<MoveSpeed>6</MoveSpeed>
-			<CargoCapacity>50</CargoCapacity>
+			<Mass>120</Mass>
+			<MoveSpeed>9</MoveSpeed>
+			<CargoCapacity>200</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
-			<AccelerationRate>0.05</AccelerationRate>
+			
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit="false">
 			<li>
@@ -53,11 +53,12 @@
 	
 		
 		<race>
-			<baseBodySize>2</baseBodySize>
+			<baseBodySize>2.75</baseBodySize>
 		</race>
 		
 		<properties>
-			
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+			<winterSpeedMultiplier>3.25</winterSpeedMultiplier>
 			<diagonalRotation>false</diagonalRotation>
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 1)</li>
@@ -79,8 +80,8 @@
 					
 				</li>
 				<li>
-					<key>Passenger</key>
-					<label>Passenger</label>
+					<key>Patient</key>
+					<label>Patient</label>
 					<slots>1</slots>
 					<exposed>false</exposed>
 					
@@ -297,7 +298,7 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -314,7 +315,7 @@
 			<li>
 				<key>LeftSidePanel</key>
 				<label>Left Side Panel</label>
-				<health>30</health>
+				<health>75</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -324,7 +325,7 @@
 			<li>
 				<key>RightSidePanel</key>
 				<label>Right Side Panel</label>
-				<health>30</health>
+				<health>75</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -396,13 +397,13 @@
 			<li>
 				<key>Hood</key>
 				<label>Hood</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 			</li>
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>45</health>
+				<health>70</health>
 				<depth>External</depth>
 			</li>
 		</components>
@@ -413,8 +414,17 @@
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>30</fuelConsumptionRate>
+				<fuelConsumptionRate>25</fuelConsumptionRate>
 				<fuelCapacity>60</fuelCapacity>
+			</li>
+			<li Class="AlphaVehiclesEarlyCars.CompProperties_AddHediffToVehiclePassenger">
+				<hediffsToAdd>
+					<li>
+						<hediff>AV_Patient</hediff>
+						<role>Patient</role>
+					</li>
+									
+				</hediffsToAdd>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>

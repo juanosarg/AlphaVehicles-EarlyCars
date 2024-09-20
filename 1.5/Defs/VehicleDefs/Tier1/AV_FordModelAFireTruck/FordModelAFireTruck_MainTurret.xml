@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>AV_FordModelAFireTruck_Turret</defName>
+		<label>firefoam</label>
+		<description>A firefoam spray that can get rid of dangerous fires.</description>
+		<turretType>Rotatable</turretType>		
+		<projectile>Proj_Foam</projectile>
+		<reloadTimer>4</reloadTimer>
+		<warmUpTimer>4.5</warmUpTimer>
+		<magazineCapacity>8</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.2</rotationSpeed>
+		<restrictionType>Vehicles.TurretRestrictions_Stationary</restrictionType>
+		<projectileOffset>2.5</projectileOffset>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>25</maxRange>
+		<minRange>3</minRange>
+		
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>80</shotsPerBurst>
+				<ticksBetweenBursts>2</ticksBetweenBursts>
+				<spreadRadius>8</spreadRadius>
+				<label>Firefoam</label>
+				<texPath>UI/Icons/AV_FirefoamTurret</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>UI/Empty/Empty</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</ammunition>
+		
+	</Vehicles.VehicleTurretDef>
+</Defs>

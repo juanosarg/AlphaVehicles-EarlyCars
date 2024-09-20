@@ -26,19 +26,19 @@
 		<vehicleType>Land</vehicleType>
 		
 		<statBases>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Flammability>1</Flammability>
-			<MarketValue>850</MarketValue>
+			<MarketValue>1950</MarketValue>
 		</statBases>
 		
 		<vehicleStats>
-			<Mass>45</Mass>
-			<MoveSpeed>6</MoveSpeed>
-			<CargoCapacity>50</CargoCapacity>
+			<Mass>180</Mass>
+			<MoveSpeed>12</MoveSpeed>
+			<CargoCapacity>250</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
-			<AccelerationRate>0.05</AccelerationRate>
+			
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit="false">
 			<li>
@@ -50,11 +50,11 @@
 	
 		
 		<race>
-			<baseBodySize>2</baseBodySize>
+			<baseBodySize>3</baseBodySize>
 		</race>
 		
 		<properties>
-			
+			<customRoadCosts AssignDefaults = "0.4"/>
 			<diagonalRotation>false</diagonalRotation>
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 1)</li>
@@ -294,7 +294,7 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>45</health>
+				<health>55</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -311,7 +311,7 @@
 			<li>
 				<key>LeftSidePanel</key>
 				<label>Left Side Panel</label>
-				<health>30</health>
+				<health>55</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -321,7 +321,7 @@
 			<li>
 				<key>RightSidePanel</key>
 				<label>Right Side Panel</label>
-				<health>30</health>
+				<health>55</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -355,7 +355,7 @@
 			<li>
 				<key>FrontBumper</key>
 				<label>Front Bumper</label>
-				<health>20</health>
+				<health>30</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -365,7 +365,7 @@
 			<li>
 				<key>RearBumper</key>
 				<label>Rear Bumper</label>
-				<health>20</health>
+				<health>30</health>
 				<depth>External</depth>
 				
 				<hitbox>
@@ -375,7 +375,7 @@
 			<li>
 				<key>Upholstery</key>
 				<label>Upholstery</label>
-				<health>30</health>
+				<health>40</health>
 				<depth>Internal</depth>
 			</li>
 			<li>
@@ -393,13 +393,13 @@
 			<li>
 				<key>Hood</key>
 				<label>Hood</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 			</li>
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>45</health>
+				<health>100</health>
 				<depth>External</depth>
 			</li>
 		</components>
@@ -410,7 +410,7 @@
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>30</fuelConsumptionRate>
+				<fuelConsumptionRate>25</fuelConsumptionRate>
 				<fuelCapacity>60</fuelCapacity>
 			</li>
 		</comps>

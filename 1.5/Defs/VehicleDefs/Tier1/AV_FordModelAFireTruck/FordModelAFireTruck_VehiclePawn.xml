@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
-<Defs>	
+<Defs>
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
-	<defName>AV_FordModelAFireTruck</defName>
+		<defName>AV_FordModelAFireTruck</defName>
 		<label>Ford Model A Firetruck</label>
-		<description>The Ford Model A, produced from 1927 to 1931, was the successor to the Model T and marked a significant advancement in automotive design and technology. It featured a more modern look with improved styling, a more powerful 3.3-liter four-cylinder engine, and enhanced driving comfort.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<description>The Ford Model A, produced from 1927 to 1931, was the successor to the Model T and marked a significant advancement in automotive design and technology. It featured a more modern look with improved styling, a more powerful 3.3-liter four-cylinder engine, and enhanced driving comfort. This model has been refitted as a fire truck.\n\nConsumes a lot of fuel, and is best used for short to medium distances.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Land/Tier1/AV_FordModelAFireTruck/AV_FordModelAFireTruck</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -13,56 +12,44 @@
 			<color>(91, 8, 8)</color>
 			<colorTwo>(63, 9, 16)</colorTwo>
 			<colorThree>(37, 11, 11)</colorThree>
-			
-			
 		</graphicData>
-		
 		<fillPercent>0.8</fillPercent>
-		
 		<buildDef>AV_FordModelAFireTruck_Blueprint</buildDef>
-		
 		<size>(2,4)</size>
-		
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<vehicleCategory>Transport</vehicleCategory>
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Land</vehicleType>
-		
 		<statBases>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Flammability>1</Flammability>
-			<MarketValue>850</MarketValue>
+			<MarketValue>1500</MarketValue>
 		</statBases>
-		
 		<vehicleStats>
-			<Mass>45</Mass>
-			<MoveSpeed>6</MoveSpeed>
-			<CargoCapacity>50</CargoCapacity>
+			<Mass>120</Mass>
+			<MoveSpeed>9</MoveSpeed>
+			<CargoCapacity>200</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
-			<AccelerationRate>0.05</AccelerationRate>
+			
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit="false">
 			<li>
 				<key>MoveStart</key>
 				<value>AV_EarlyCarSound</value>
 			</li>
-			
 		</soundOneShotsOnEvent>
-	
-		
 		<race>
 			<baseBodySize>2</baseBodySize>
 		</race>
-		
 		<properties>
-			
+			<worldSpeedMultiplier>1.5</worldSpeedMultiplier>
+			<winterSpeedMultiplier>3.25</winterSpeedMultiplier>
 			<diagonalRotation>false</diagonalRotation>
 			<vehicleJobLimitations>
 				<li>(RepairVehicle, 1)</li>
 			</vehicleJobLimitations>
-			
 			<roles>
 				<li>
 					<key>driver</key>
@@ -73,28 +60,25 @@
 					<hitbox>
 						<side>Body</side>
 					</hitbox>
-					<handlingTypes>
-						<li>Movement</li>
-					</handlingTypes>
-					
+					<handlingTypes>Movement, Turret</handlingTypes>
+					<turretIds>
+						<li>mainTurret</li>
+					</turretIds>
 				</li>
 				<li>
 					<key>Passenger</key>
 					<label>Passenger</label>
 					<slots>1</slots>
 					<exposed>false</exposed>
-					
 					<hitbox>
 						<side>Body</side>
 						<noOverlapWith>
 							<li>Back</li>
 						</noOverlapWith>
 					</hitbox>
-					
 				</li>
 			</roles>
 		</properties>
-		
 		<components>
 			<li>
 				<key>Engine</key>
@@ -102,9 +86,8 @@
 				<health>50</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>External</depth>
-				
 				<reactors>
-					<li Class = "Vehicles.Reactor_Explosive">
+					<li Class="Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
 						<chance>0.25</chance>
 						<maxHealth>0.2</maxHealth>
@@ -112,14 +95,12 @@
 						<damageDef>Flame</damageDef>
 					</li>
 				</reactors>
-				
 				<hitbox>
 					<cells>
 						<li>(0, -1)</li>
 						<li>(1, -1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -129,23 +110,19 @@
 				<label>Front Left Wheel</label>
 				<health>30</health>
 				<depth>External</depth>
-				
 				<armor>
 					<ArmorRating_Blunt>0</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0</ArmorRating_Sharp>
 				</armor>
-				
 				<tags>
 					<li>Wheel</li>
 				</tags>
-				
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
 						<li>(0, 1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -155,50 +132,41 @@
 				<label>Front Right Wheel</label>
 				<health>30</health>
 				<depth>External</depth>
-				
 				<armor>
 					<ArmorRating_Blunt>0</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0</ArmorRating_Sharp>
 				</armor>
-				
 				<tags>
 					<li>Wheel</li>
 				</tags>
-				
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
 						<li>(1, 1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
 			</li>
-			
 			<li>
 				<key>BackLeftWheel</key>
 				<label>Back Left Wheel</label>
 				<health>30</health>
 				<depth>External</depth>
-				
 				<armor>
 					<ArmorRating_Blunt>0</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0</ArmorRating_Sharp>
 				</armor>
-				
 				<tags>
 					<li>Wheel</li>
 				</tags>
-				
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
 						<li>(0, -1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -208,23 +176,19 @@
 				<label>Back Right Wheel</label>
 				<health>30</health>
 				<depth>External</depth>
-				
 				<armor>
 					<ArmorRating_Blunt>0</ArmorRating_Blunt>
 					<ArmorRating_Sharp>0</ArmorRating_Sharp>
 				</armor>
-				
 				<tags>
 					<li>Wheel</li>
 				</tags>
-				
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
 						<li>(1, -1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -234,13 +198,11 @@
 				<label>Front Left Suspension</label>
 				<health>20</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<cells>
 						<li>(0, 1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -250,30 +212,25 @@
 				<label>Front Right Suspension</label>
 				<health>20</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<cells>
 						<li>(1, 1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
 			</li>
-			
 			<li>
 				<key>BackLeftSuspension</key>
 				<label>Back Left Suspension</label>
 				<health>20</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<cells>
 						<li>(0, -1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -283,13 +240,11 @@
 				<label>Back Right Suspension</label>
 				<health>20</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<cells>
 						<li>(1, -1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -297,16 +252,14 @@
 			<li>
 				<key>Gearbox</key>
 				<label>Gearbox</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<cells>
 						<li>(0, 1)</li>
 						<li>(1, 1)</li>
 					</cells>
 				</hitbox>
-				
 				<categories>
 					<li>MoveSpeed</li>
 				</categories>
@@ -314,9 +267,8 @@
 			<li>
 				<key>LeftSidePanel</key>
 				<label>Left Side Panel</label>
-				<health>30</health>
+				<health>75</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<side>Left</side>
 				</hitbox>
@@ -324,9 +276,8 @@
 			<li>
 				<key>RightSidePanel</key>
 				<label>Right Side Panel</label>
-				<health>30</health>
+				<health>75</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<side>Right</side>
 				</hitbox>
@@ -336,10 +287,9 @@
 				<label>Chemtank</label>
 				<health>30</health>
 				<depth>External</depth>
-				
 				<reactors>
-					<li Class = "Vehicles.Reactor_FuelLeak"/>
-					<li Class = "Vehicles.Reactor_Explosive">
+					<li Class="Vehicles.Reactor_FuelLeak"/>
+					<li Class="Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
 						<chance>0.25</chance>
 						<maxHealth>0.2</maxHealth>
@@ -347,7 +297,6 @@
 						<damageDef>Flame</damageDef>
 					</li>
 				</reactors>
-				
 				<hitbox>
 					<cells>
 						<li>(0, -1)</li>
@@ -360,7 +309,6 @@
 				<label>Front Bumper</label>
 				<health>20</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<side>Front</side>
 				</hitbox>
@@ -370,7 +318,6 @@
 				<label>Rear Bumper</label>
 				<health>20</health>
 				<depth>External</depth>
-				
 				<hitbox>
 					<side>Back</side>
 				</hitbox>
@@ -396,25 +343,32 @@
 			<li>
 				<key>Hood</key>
 				<label>Hood</label>
-				<health>45</health>
+				<health>50</health>
 				<depth>External</depth>
 			</li>
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>45</health>
+				<health>70</health>
 				<depth>External</depth>
 			</li>
 		</components>
-		
-		
-		
 		<comps>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
-				<fuelConsumptionRate>30</fuelConsumptionRate>
+				<fuelConsumptionRate>25</fuelConsumptionRate>
 				<fuelCapacity>60</fuelCapacity>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+				<turrets>
+					<li>
+						<turretDef>AV_FordModelAFireTruck_Turret</turretDef>
+						<gizmoLabel>Firefoam</gizmoLabel>
+						<aimPieOffset>(0, 1.5)</aimPieOffset>
+						<key>mainTurret</key>
+					</li>
+				</turrets>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>
