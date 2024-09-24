@@ -75,20 +75,7 @@
 					</handlingTypes>
 					
 				</li>
-				<li>
-					<key>Passenger</key>
-					<label>Passenger</label>
-					<slots>1</slots>
-					<exposed>false</exposed>
-					
-					<hitbox>
-						<side>Body</side>
-						<noOverlapWith>
-							<li>Back</li>
-						</noOverlapWith>
-					</hitbox>
-					
-				</li>
+				
 			</roles>
 		</properties>
 		
