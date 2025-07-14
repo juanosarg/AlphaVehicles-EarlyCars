@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>AV_EarlyCarParts</defName>
+		<label>early car parts</label>
+		<parent>Manufactured</parent>
+		<iconPath>UI/Categories/AV_EarlyCarParts</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+	<ThingDef Name="AV_EarlyCarPartsBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>10</stackLimit>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>AV_EarlyCarParts</li>
+		</thingCategories>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workSkill>Crafting</workSkill>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>AV_EarlyCars</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AV_EarlyCarPartsBase">
+		<defName>AV_EarlyWheel</defName>
+		<label>early car wheel</label>
+		<description>An early car wheel made of wood with metal rims, resembling the wheels used on horse-drawn carriages. These wheels are designed for durability on rough, unpaved roads and feature spokes for strength and stability.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AV_EarlyWheel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Mass>10</Mass>
+			<WorkToMake>100</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>25</Steel>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<tradeTags>
+			<li>VVE_CarPartBasic</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="AV_EarlyCarPartsBase">
+		<defName>AV_EarlyMotor</defName>
+		<label>early car motor</label>
+		<description>A single-cylinder, four-stroke engine powered by chemfuel. Relatively low-powered, producing only a few horsepower. Early motors are manually started using a hand crank and rely on rudimentary ignition systems.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AV_EarlyMotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>325</MarketValue>
+			<Mass>18</Mass>
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Silver>4</Silver>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<tradeTags>
+			<li>VVE_CarPartBasic</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
